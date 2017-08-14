@@ -116,31 +116,31 @@ public class QQMainActivity extends BaseFragmentActivity {
         }
     }
 
-    /**
-     * 点击两次返回键退出
-     *
-     * @param keyCode
-     * @param event
-     * @return
-     */
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            exit();
-            return false;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
-
-    /**
-     * 退出程序
-     */
-    private void exit() {
-        if ((System.currentTimeMillis() - exitTime) > 2000) {
-            Toast.makeText(this, "", Toast.LENGTH_LONG).show();
-            exitTime = System.currentTimeMillis();
-        } else {
-            finish();
-            System.exit(0);
-        }
-    }
+//    /**
+//     * 点击两次返回键退出
+//     *
+//     * @param keyCode
+//     * @param event
+//     * @return
+//     */
+//    public boolean onKeyDown(int keyCode, KeyEvent event) {
+//        if (keyCode == KeyEvent.KEYCODE_BACK) {
+//            exit();
+//            return false;
+//        }
+//        return super.onKeyDown(keyCode, event);
+//    }
+//
+//    /**
+//     * 退出程序
+//     */
+//    private void exit() {
+//        if ((System.currentTimeMillis() - exitTime) > 2000) {
+//            Toast.makeText(this, "", Toast.LENGTH_LONG).show();
+//            exitTime = System.currentTimeMillis();
+//        } else {
+//            finish();
+//            System.exit(0);
+//        }
+//    }
 }

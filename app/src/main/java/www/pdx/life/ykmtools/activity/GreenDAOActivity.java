@@ -1,17 +1,19 @@
 package www.pdx.life.ykmtools.activity;
 
 import android.os.Bundle;
-import android.util.Log;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import butterknife.BindView;
+import www.pdx.life.ykmandroidtools.db.DaoSession;
+import www.pdx.life.ykmandroidtools.db.UserDao;
+import www.pdx.life.ykmtools.bean.User;
 import www.pdx.life.ykmtools.R;
 import www.pdx.life.ykmtools.base.BaseActivity;
-import www.pdx.life.ykmtools.bean.Student;
-import www.pdx.life.ykmtools.bean.User;
-import www.pdx.life.ykmtools.db.StudentDao;
-import www.pdx.life.ykmtools.db.UserDao;
+import www.pdx.life.ykmtools.manager.GreenDaoManager;
+
 
 /**
  * GreenDao使用例子
@@ -26,20 +28,21 @@ public class GreenDAOActivity extends BaseActivity implements View.OnClickListen
     Button deleteBean;
     @BindView(R.id.update)
     Button updateBean;
+    @BindView(R.id.test_greendao)
+    TextView showText;
 
+    DaoSession mDaoSession;
     UserDao mUserDao;
     User mUser;
-    StudentDao mStudentDao;
-    Student mStudent;
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_green_dao);
         initClick();
-        mUserDao = MyApplication.getInstances().getDaoSession().getUserDao();
-        mStudentDao = MyApplication.getInstances().getDaoSession().getStudentDao();
+        mDaoSession=GreenDaoManager.getDaoSession();
+        mUserDao = mDaoSession.getUserDao();
         mUser = new User();
-        mStudent = new Student();
     }
 
     public void initClick() {
@@ -53,20 +56,28 @@ public class GreenDAOActivity extends BaseActivity implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.add:
-                mStudent = new Student((long) 1, "杨空明");
-                mStudentDao.insert(mStudent);
+                mUser = new User((long) 1, "杨空明");
+                mUserDao.insert(mUser);
+                showText.setText(mUser.getId() + mUser.getName());
                 break;
             case R.id.delete:
-                mStudentDao.deleteByKey((long) 1);
+                mUserDao.deleteByKey((long) 1);
                 break;
             case R.id.query:
-                mStudent = mStudentDao.queryBuilder().where(StudentDao.Properties.Id.eq(1)).unique();
+                mUser = mUserDao.queryBuilder().where(UserDao.Properties.Id.eq(1)).unique();
+                if (null != mUser) {
+                    showText.setText(mUser.getId() + mUser.getName());
+                }
                 break;
             case R.id.update:
-                mStudent = new Student((long) 1, "黄国强");
-                mStudentDao.update(mStudent);
+                mUser = new User((long) 1, "黄国强");
+                mUserDao.update(mUser);
+                if (null != mUser) {
+                    showText.setText(mUser.getId() + mUser.getName());
+                }
                 break;
         }
+
     }
 
 }

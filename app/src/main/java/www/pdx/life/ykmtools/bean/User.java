@@ -1,44 +1,67 @@
 package www.pdx.life.ykmtools.bean;
 
 import org.greenrobot.greendao.annotation.Entity;
-import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
+import org.greenrobot.greendao.annotation.Property;
 import org.greenrobot.greendao.annotation.Transient;
+import org.greenrobot.greendao.annotation.Generated;
 
 /**
- * <pre>
- *     author : wenxin
- *     e-mail : xxx@xx
- *     time   : 2017/03/24
- *     desc   :
- *     version: 1.0
- * </pre>
+ * Created by huang-pc on 2016/12/31.
  */
-@Entity
+
+@Entity(nameInDb = "user")
 public class User {
-    @Id
+    @Id(autoincrement = true)
     private Long id;
+
+    @Property(nameInDb = "name")
     private String name;
+
+    @Property(nameInDb = "text")
+    private String text;
+
     @Transient
-    private int tempUsageCount; // not persisted
-    public String getName() {
-        return this.name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public Long getId() {
-        return this.id;
-    }
-    public void setId(Long id) {
+    private String other;
+
+    @Generated(hash = 2004644429)
+    public User(Long id, String name, String text) {
         this.id = id;
+        this.name = name;
+        this.text = text;
     }
-    @Generated(hash = 873297011)
+
+    @Generated(hash = 586692638)
+    public User() {
+    }
+
     public User(Long id, String name) {
         this.id = id;
         this.name = name;
     }
-    @Generated(hash = 586692638)
-    public User() {
+
+    public Long getId() {
+        return this.id;
     }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getText() {
+        return this.text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
 }

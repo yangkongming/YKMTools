@@ -1,0 +1,29 @@
+冷启动：
+       第一次启动或者被用户主动杀死app进程，或者被系统主动回收掉，
+       整个app的后台任务被清理，回到桌面再次点击app的桌面图标启动app。
+热启动：
+      用户点击返回键退推到桌面上，后台任务没有被杀死。再次点击桌面图标启动app
+为什么出现白屏或者黑屏：
+
+    1.在一个Activity打开时，如果该Activity所属的Application还没有启动，那么系统会为这个Activity创建一个进程
+
+    2.每创建一个进程都会调用一次Application，所以Application的onCreate()方法可能会被调用多次
+
+    3.在进程的创建和初始化中，势必会消耗一些时间，在这个时间里，
+    WindowManager会先加载APP里的主题样式里的窗口背景（windowBackground）作为预览元素，然后才去真正的加载布局
+
+    4.如果这个时间过长，而默认的背景又是黑色或者白色，这样会给用户造成一种错觉，这个APP很卡，很不流畅，自然也影响了用户体验。
+
+另外参考了网上的另外2种方式这里也进行总结一下.
+
+    1、将背景图设置成我们APP的Logo图，作为APP启动的引导，现在市面上大部分的APP也是这么做的。
+    <style name="AppWelcome" parent="AppTheme">
+        <item name="android:windowBackground">@mipmap/bg_welcome_start</item>
+    </style>
+
+
+    2、将背景颜色设置为透明色，这样当用户点击桌面APP图片的时候，并不会"立即"进入APP，而且在桌面上停留一会，
+    其实这时候APP已经是启动的了，只是我们心机的把Theme里的windowBackground的颜色设置成透明的，
+    强行把锅甩给了手机应用厂商（手机反应太慢了啦，哈哈），其实现在微信也是这样做的
+
+    <style name="Appwelcome" parent="android:Theme.Translucent.NoTitleBar.Fullscreen"/>
