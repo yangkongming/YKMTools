@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_we_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/tab_bg"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <www.pdx.life.ykmtools.viewUtils.weChat.GradientIconView
+                android:id="@+id/main_baby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bottom_icon="@mipmap/btn_set_baby"
+                app:top_icon="@mipmap/btn_nor_baby" />
+
+            <www.pdx.life.ykmtools.viewUtils.weChat.GradientTextView
+                android:id="@+id/main_baby_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bottom_text_color="@color/tab_text_gray"
+                app:text="微信"
+                app:text_size="12sp"
+                app:top_text_color="@color/tab_bg_green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <www.pdx.life.ykmtools.viewUtils.weChat.GradientIconView
+                android:id="@+id/main_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bottom_icon="@mipmap/btn_set_share"
+                app:top_icon="@mipmap/btn_nor_share" />
+
+            <www.pdx.life.ykmtools.viewUtils.weChat.GradientTextView
+                android:id="@+id/main_share_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bottom_text_color="@color/tab_text_gray"
+                app:text="通讯录"
+                app:text_size="12sp"
+                app:top_text_color="@color/tab_bg_green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <www.pdx.life.ykmtools.viewUtils.weChat.GradientIconView
+                android:id="@+id/main_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bottom_icon="@mipmap/btn_set_communication"
+                app:top_icon="@mipmap/btn_nor_communication" />
+
+            <www.pdx.life.ykmtools.viewUtils.weChat.GradientTextView
+                android:id="@+id/main_contact_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bottom_text_color="@color/tab_text_gray"
+                app:text="发现"
+                app:text_size="12sp"
+                app:top_text_color="@color/tab_bg_green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <www.pdx.life.ykmtools.viewUtils.weChat.GradientIconView
+                android:id="@+id/main_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bottom_icon="@mipmap/btn_set_my"
+                app:top_icon="@mipmap/btn_nor_my" />
+
+            <www.pdx.life.ykmtools.viewUtils.weChat.GradientTextView
+                android:id="@+id/main_me_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bottom_text_color="@color/tab_text_gray"
+                app:text="我的"
+                app:text_size="12sp"
+                app:top_text_color="@color/tab_bg_green" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

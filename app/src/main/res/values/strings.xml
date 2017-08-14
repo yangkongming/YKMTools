@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">工具类</string>
+    <string name="company_login">企业登录</string>
+    <string name="merchant_login">招商局登录</string>
+
+    <!--commmon-->
+    <string name="merchant_my">我的</string>
+    <string name="merchant_company">企业列表</string>
+    <string name="company_cap">产能列表</string>
+    <string name="merchant_home">首页</string>
+    <string name="string_login">登录</string>
+    <string name="string_register">注册</string>
+    <string name="string_username">用户名</string>
+    <string name="string_pwd">密码</string>
+    <string name="string_user_phone">手机号</string>
+    <string name="string_submit">提交</string>
+    <string name="string_save">保存</string>
+    <string name="string_cert">已审核</string>
+    <string name="string_no_cert">未审核</string>
+    <string name="string_sure">确定</string>
+    <string name="string_cancel">取消</string>
+    <string name="string_complete">完成</string>
+    <string name="string_integer">0123456789</string>
+    <string name="string_number">0123456789abcdefghigklmnopqrstuvwxyzQWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="string_query_name">请输入姓名</string>
+    <string name="string_query_phone">请输入手机号</string>
+    <string name="string_veri">请输入验证码</string>
+    <string name="string_userpwd">请输入密码</string>
+    <string name="string_get_yzm">获取验证码</string>
+    <string name="string_merchant_protocol">招商银行认证协议</string>
+    <string name="string_agree_login">同意协议并登录</string>
+    <string name="string_company_login">企业端</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="click_exit">再按一次退出程序</string>
+    <string name="string_add">添加</string>
+    <string name="check_your_network">请检查您的网络！</string>
+    <string name="string_no_data">没有数据</string>
+    <string name="string_publish">发布</string>
+    <string name="string_saved_to_cache">已存草稿</string>
+    <string name="string_company_list">选择企业</string>
+    <string name="string_cap_list">产能列表</string>
+    <string name="string_cap_info">产能信息</string>
+    <string name="string_tender_list">招标列表</string>
+    <string name="string_tender_info">招标信息</string>
+    <string name="string_biddetail_list">投标列表</string>
+    <string name="string_order_list">订单列表</string>
+    <string name="string_biddetail_info">投标信息</string>
+    <string name="string_cap_publish">发布产能</string>
+    <string name="string_goods_name">请输入产品名称</string>
+    <string name="string_goods_amount">请输入产品数量</string>
+    <string name="string_publish_success">发布成功</string>
+    <string name="string_commit_success">提交成功</string>
+    <string name="string_filter">筛选</string>
+    <!--招标-->
+    <string name="title_invten">招标</string>
+    <string name="title_myInvten">我的招标</string>
+    <string name="title_newten">创建标书</string>
+    <string name="title_tenderdetail">标书详情</string>
+    <string name="title_company_info">企业详情</string>
+    <string name="title_setting">设置</string>
+    <string name="string_quantityunit">数量单位</string>
+    <string name="string_please_fullfill">请填完整信息</string>
+    <string name="string_cannot_distribute_order">此用户已分配订单！</string>
+    <!--投标-->
+    <string name="title_bidable_list">投标列表</string>
+    <string name="title_bided_list">已投列表</string>
+    <string name="string_bided">已投</string>
+    <string name="string_bidnum">投标数量</string>
+    <string name="string_bid_success">投标成功</string>
+    <string name="string_cannot_bid_zero">投标数不能为0</string>
+    <string name="string_cannot_distributetender_zero">分标数不能为0？？？</string>
+    <string name="string_tender_distribute">分标</string>
+    <!--订单-->
+    <string name="title_myorder_list">我的订单</string>
+    <string name="title_orderinfo_list">订单详情</string>
+    <string name="title_order_firstparty">我是甲方</string>
+    <string name="title_order_secondparty">我是乙方</string>
+
+</resources>

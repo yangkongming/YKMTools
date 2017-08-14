@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_qqmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tab_bg_line" />
+
+    <RadioGroup
+        android:id="@+id/activity_group_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:checkedButton="@+id/merchant_home"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <RadioButton
+            android:id="@+id/merchant_home"
+            style="@style/main_tab_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/main_tab_1"
+            android:gravity="center"
+            android:text="消息" />
+
+
+        <RadioButton
+            android:id="@+id/merchant_company"
+            style="@style/main_tab_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:checked="false"
+            android:drawableTop="@drawable/main_tab_2"
+            android:gravity="center"
+            android:text="联系人" />
+
+        <RadioButton
+            android:id="@+id/merchant_my"
+            style="@style/main_tab_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:checked="false"
+            android:drawableTop="@drawable/main_tab_3"
+            android:gravity="center"
+            android:text="状态" />
+    </RadioGroup>
+
+</LinearLayout>

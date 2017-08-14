@@ -1,0 +1,46 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="updatebar_height">62.0dip</dimen>
+    <dimen name="updatebar_content_height">60.0dip</dimen>
+    <dimen name="updatebar_padding">10.0dip</dimen>
+    <dimen name="popup_width">130.0dip</dimen>
+    <dimen name="titleBarHeight">45.0dip</dimen>
+    <!--登录提醒-->
+    <dimen name="dialog_update_content">20sp</dimen>
+    <dimen name="prompt">20sp</dimen>
+    <!--首页-->
+    <dimen name="gridlayout_height">140dp</dimen>
+
+    <!--************    分割线     **************-->
+    <!--文字统一大小-->
+    <dimen name="textsize_12">12sp</dimen>  <!--备注-->
+    <dimen name="textsize_14">14sp</dimen>  <!--正文-->
+    <dimen name="textsize_16">16sp</dimen>  <!--副标题-->
+    <dimen name="textsize_20">20sp</dimen>  <!--标题-->
+    <dimen name="textsize_34">34sp</dimen>  <!--展示-->
+
+    <!--Margin统一大小-->
+    <dimen name="margin_size_16">16dp</dimen>         <!--水平方向最常用-->
+    <dimen name="margin_height_size_8">8dp</dimen>    <!--缝隙-->
+    <dimen name="margin_height_size_24">24dp</dimen>  <!--状态栏-->
+    <dimen name="margin_height_size_48">48dp</dimen>  <!--目录栏-->
+    <dimen name="margin_height_size_56">56dp</dimen>  <!--导航栏-->
+    <dimen name="margin_height_size_72">72dp</dimen>  <!--item-->
+
+    <!--其他常用-->
+    <dimen name="size_0">0dp</dimen>
+    <dimen name="size_2">2dp</dimen>
+    <dimen name="size_4">4dp</dimen>
+    <dimen name="size_6">6dp</dimen>
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_12">12dp</dimen>
+    <dimen name="size_16">16dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="size_48">48dp</dimen>
+    <dimen name="size_300">300dp</dimen>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="万能适配器" />
+
+    <Button
+        android:id="@+id/qq_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="qq框架" />
+
+    <Button
+        android:id="@+id/wechat_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微信框架" />
+
+    <Button
+        android:id="@+id/advice_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片轮播" />
+
+    <Button
+        android:id="@+id/sweet_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义对话框" />
+
+    <Button
+        android:id="@+id/welcome_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义引导页" />
+
+    <Button
+        android:id="@+id/welcome_viewpager1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="引导页" />
+
+    <Button
+        android:id="@+id/my_Toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toast" />
+
+    <Button
+        android:id="@+id/my_greenDAO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据库" />
+
+    <Button
+        android:id="@+id/my_glide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Glide" />
+</LinearLayout>
